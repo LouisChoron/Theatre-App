@@ -19,5 +19,4 @@ dependencies:
   - requests=2.27.1
   - selenium=3.141.0
   - ujson=5.1.0
-  - chromedriver_installer=2.10.0
 prefix: C:\Users\louis\anaconda3\envs\Streamlit-env
