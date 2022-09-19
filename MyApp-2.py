@@ -12,6 +12,7 @@ import matplotlib.pyplot as plt
 import json
 import datetime
 from dateutil.relativedelta import relativedelta
+from selenium.webdriver.chrome.service import Service as ChromeService
 from webdriver_manager.chrome import ChromeDriverManager
 
 st.title('Theatre Time Baby!')
@@ -431,7 +432,7 @@ prices = st.slider(             #input prices
 
 if st.button('Find Seats'):
     
-    driver = webdriver.Chrome(ChromeDriverManager().install())
+    driver = webdriver.Chrome(service=ChromeService(ChromeDriverManager().install()))
     urls_load_state = st.text('Finding performance dates...')
     urls,all_perfs=PerfURLS(f'{start_date}',f'{end_date}')
     if urls==[]:                                                                     ## Error check
