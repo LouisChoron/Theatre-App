@@ -19,5 +19,5 @@ dependencies:
   - requests=2.27.1
   - selenium=3.141.0
   - ujson=5.1.0
-  - webdriver-manager=3.8.3=pypi_0
+  - webdriver-manager=3.8.3
 prefix: C:\Users\louis\anaconda3\envs\Streamlit-env
