@@ -7,7 +7,7 @@ dependencies:
   - matplotlib=3.5.1=py39haa95532_1
   - matplotlib-base=3.5.1=py39hd77b12b_1
   - matplotlib-inline=0.1.2=pyhd3eb1b0_2
-  - numpy=1.22.3=py39h7a0a035_0
+  - numpy=1.22.3
   - numpy-base=1.22.3=py39hca35cd5_0
   - numpydoc=1.2=pyhd3eb1b0_0
   - pandas=1.4.2=py39hd77b12b_0
