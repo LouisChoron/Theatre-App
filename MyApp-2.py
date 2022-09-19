@@ -12,6 +12,7 @@ import matplotlib.pyplot as plt
 import json
 import datetime
 from dateutil.relativedelta import relativedelta
+from webdriver_manager.chrome import ChromeDriverManager
 
 st.title('Theatre Time Baby!')
 
@@ -430,7 +431,7 @@ prices = st.slider(             #input prices
 
 if st.button('Find Seats'):
     
-    driver = webdriver.Chrome(r"C:\Users\louis\OneDrive\Documents\chromedriver_win32\chromedriver.exe")
+    driver = webdriver.Chrome(ChromeDriverManager().install())
     urls_load_state = st.text('Finding performance dates...')
     urls,all_perfs=PerfURLS(f'{start_date}',f'{end_date}')
     if urls==[]:                                                                     ## Error check
@@ -438,7 +439,7 @@ if st.button('Find Seats'):
         st.stop()
     urls_load_state.text("Performances found! (1/2) (without using st.cache)")
     
-    driver = webdriver.Chrome(r"C:\Users\louis\OneDrive\Documents\chromedriver_win32\chromedriver.exe")
+    driver = webdriver.Chrome(ChromeDriverManager().install())
     total_df_load_state = st.text('Finding seats...')
     total_df,total_df_cheapest = scrape_data(urls)
     driver.quit() #just incase, as cache is sometimes too fast!
