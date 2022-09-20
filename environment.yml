@@ -18,7 +18,7 @@ dependencies:
   - python-lsp-jsonrpc=1.0.0
   - regex=2022.3.15
   - requests=2.27.1
-  - selenium=4.4.3
+  - selenium=3.141.0
   - ujson=5.1.0
   - webdriver-manager=3.8.3
 prefix: C:\Users\louis\anaconda3\envs\Streamlit-env
