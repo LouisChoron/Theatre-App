@@ -431,7 +431,8 @@ prices = st.slider(             #input prices
 
 if st.button('Find Seats'):
     
-    driver = webdriver.Chrome(ChromeDriverManager().install())
+    driver_install=ChromeDriverManager().install()
+    driver = webdriver.Chrome(driver_install)
     urls_load_state = st.text('Finding performance dates...')
     urls,all_perfs=PerfURLS(f'{start_date}',f'{end_date}')
     if urls==[]:                                                                     ## Error check
