@@ -14,7 +14,7 @@ import datetime
 from dateutil.relativedelta import relativedelta
 from webdriver_manager.chrome import ChromeDriverManager
 
-st.title('Theatre Time Baby!')
+st.title('Theatre Time!')
 
 
 ###################################################################################################################### FUNCTIONS
