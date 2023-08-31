@@ -1,4 +1,4 @@
-# Louis-App
+# Theatre-App
 This is a project I worked on, to improve the way theatre tickets are booked!
 
 I enjoy going to the theatre and so book tickets relatively often. However, having to load the "seat map" to scroll through the availability for every seat,
